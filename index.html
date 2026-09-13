@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garantik — Ne payez plus jamais pour un abonnement oublié</title>
+  <meta name="description" content="Photographiez vos factures et tickets. Garantik détecte vos renouvellements tacites, protège vos garanties et résilie vos contrats superflus en un clic." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230B132B'/><path d='M50 15 L78 28 V52 C78 70 50 85 50 85 C50 85 22 70 22 52 V28 Z' fill='none' stroke='%2300D084' stroke-width='7'/><path d='M38 50 L46 58 L64 40' fill='none' stroke='%2300D084' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 1 : NAVIGATION (Header minimaliste)                  -->
+  <!-- ============================================================ -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="brand-logo" aria-label="Garantik Accueil">
+        <div class="logo-shield">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            <path d="M9 12l2 2 4-4"></path>
+          </svg>
+        </div>
+        <span class="logo-text">Garantik</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#features">Fonctionnalités</a>
+        <a href="#how-it-works">Comment ça marche</a>
+        <a href="#pricing">Tarifs</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#download" class="btn btn-primary btn-pill">
+          Télécharger l'application
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 2 : HERO SECTION (La proposition de valeur)          -->
+  <!-- ============================================================ -->
+  <section class="hero-section" id="download">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="badge-tag">
+          <span class="tag-icon">⚡️</span>
+          <span>LE GESTIONNAIRE D'ÉCHÉANCES SANS SAISIE MANUELLE</span>
+        </div>
+
+        <h1 class="hero-title">
+          Ne payez plus jamais pour un <span class="text-gradient">abonnement oublié</span>.
+        </h1>
+
+        <p class="hero-description">
+          Photographiez vos factures et tickets. Garantik détecte vos renouvellements tacites, protège vos garanties et résilie vos contrats superflus en un clic.
+        </p>
+
+        <!-- Bouton de téléchargement exclusif Google Play -->
+        <div class="app-badges-group">
+          <!-- Google Play Badge Exclusif -->
+          <a href="#download" class="store-badge store-badge-large" aria-label="Disponible sur Google Play">
+            <svg class="store-icon" viewBox="0 0 512 512" width="28" height="28">
+              <path fill="#4285F4" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1z"/>
+              <path fill="#34A853" d="M47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0z"/>
+              <path fill="#FBBC04" d="M472.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8z"/>
+              <path fill="#EA4335" d="M104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+            </svg>
+            <div class="store-text">
+              <span class="store-sub">DISPONIBLE SUR</span>
+              <span class="store-main">Google Play</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- Preuve sociale immédiate -->
+        <div class="social-proof">
+          <div class="rating-stars">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+          <p class="proof-text">
+            <strong>4.8/5</strong> sur Google Play • <strong>Plus de 240 €</strong> économisés en moyenne par utilisateur.
+          </p>
+        </div>
+      </div>
+
+      <!-- Visuel Hero : Mockup Smartphone flottant -->
+      <div class="hero-visual">
+        <div class="mockup-glow"></div>
+        <div class="phone-frame">
+          <div class="phone-camera-hole"></div>
+          <div class="phone-screen">
+            <!-- App UI Header -->
+            <div class="app-ui-header">
+              <div class="ui-greeting">
+                <span class="ui-sub">GARANTIK SCANNER</span>
+                <span class="ui-title">Analyse en cours...</span>
+              </div>
+              <span class="ui-badge-live">IA ACTIVE</span>
+            </div>
+
+            <!-- Viewfinder Camera Area -->
+            <div class="app-camera-view">
+              <div class="scan-laser"></div>
+              <div class="scan-corners">
+                <span class="c-tl"></span><span class="c-tr"></span>
+                <span class="c-bl"></span><span class="c-br"></span>
+              </div>
+              <div class="receipt-preview">
+                <div class="receipt-header-line">SPOTIFY ABONNEMENT</div>
+                <div class="receipt-date">Période d'essai 30 jours</div>
+                <div class="receipt-price">10,99 € / mois</div>
+              </div>
+            </div>
+
+            <!-- Dynamic Notification Card -->
+            <div class="dynamic-alert-card">
+              <div class="alert-icon-wrap">
+                <span class="alert-bell">🔔</span>
+              </div>
+              <div class="alert-info">
+                <span class="alert-merchant">Spotify Détecté</span>
+                <span class="alert-expiry">Fin d'essai dans 48 h • 10,99 €/mois</span>
+              </div>
+              <span class="alert-action-tag">Résilier</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 3 : LES 3 DOULEURS (Avant / Après)                   -->
+  <!-- ============================================================ -->
+  <section class="section-pain" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">LE CONSTAT</span>
+        <h2 class="section-title">Pourquoi perdez-vous de l'argent chaque mois ?</h2>
+        <p class="section-sub">Découvrez comment Garantik transforme les pièges du quotidien en économies directes.</p>
+      </div>
+
+      <div class="comparison-grid">
+        <!-- Douleur 1 -->
+        <div class="comparison-card">
+          <div class="card-side before">
+            <div class="side-header">
+              <span class="status-icon">❌</span>
+              <h4>Sans Garantik</h4>
+            </div>
+            <p>Reconductions tacites prélevées en silence sur votre compte bancaire.</p>
+          </div>
+          <div class="card-side after">
+            <div class="side-header">
+              <span class="status-icon">✅</span>
+              <h4>Avec Garantik</h4>
+            </div>
+            <p>Notification push 48 h avant chaque prélèvement automatique ou fin d'essai.</p>
+          </div>
+        </div>
+
+        <!-- Douleur 2 -->
+        <div class="comparison-card">
+          <div class="card-side before">
+            <div class="side-header">
+              <span class="status-icon">❌</span>
+              <h4>Sans Garantik</h4>
+            </div>
+            <p>Tickets thermiques effacés, égarés et garanties de 2 ans perdues à jamais.</p>
+          </div>
+          <div class="card-side after">
+            <div class="side-header">
+              <span class="status-icon">✅</span>
+              <h4>Avec Garantik</h4>
+            </div>
+            <p>Justificatifs d'achat numérisés, classés et alertes intelligentes de fin de garantie.</p>
+          </div>
+        </div>
+
+        <!-- Douleur 3 -->
+        <div class="comparison-card">
+          <div class="card-side before">
+            <div class="side-header">
+              <span class="status-icon">❌</span>
+              <h4>Sans Garantik</h4>
+            </div>
+            <p>Démarches de résiliation longues, opaques et délibérément décourageantes.</p>
+          </div>
+          <div class="card-side after">
+            <div class="side-header">
+              <span class="status-icon">✅</span>
+              <h4>Avec Garantik</h4>
+            </div>
+            <p>Lettre recommandée PDF préremplie (Loi Châtel & Hamon) générée en 1 clic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 4 : COMMENT ÇA MARCHE (3 étapes visuelles)           -->
+  <!-- ============================================================ -->
+  <section class="section-how" id="how-it-works">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">SIMPLICITÉ ABSOLUE</span>
+        <h2 class="section-title">3 étapes pour reprendre le contrôle</h2>
+        <p class="section-sub">Aucune saisie manuelle laborieuse. Notre intelligence artificielle s'occupe de tout.</p>
+      </div>
+
+      <div class="steps-grid">
+        <!-- Étape 1 -->
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <div class="step-icon">📸</div>
+          <h3 class="step-title">Scannez en 2 secondes</h3>
+          <p class="step-desc">
+            Photographiez votre facture, ticket de caisse ou contrat PDF. Notre OCR extrait instantanément le commerçant, le montant et l'échéance exacte.
+          </p>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <div class="step-icon">🔔</div>
+          <h3 class="step-title">Recevez l'alerte au bon moment</h3>
+          <p class="step-desc">
+            Une notification push vous avertit en amont avant tout renouvellement automatique, préavis de contrat ou expiration de garantie légale.
+          </p>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <div class="step-icon">⚡</div>
+          <h3 class="step-title">Décidez en toute liberté</h3>
+          <p class="step-desc">
+            Gardez le service ou téléchargez votre lettre de résiliation juridique conforme pré-remplie pour stopper net vos prélèvements.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 5 : SÉCURITÉ & DONNÉES PRIVÉES (Réassurance B2C)    -->
+  <!-- ============================================================ -->
+  <section class="section-security">
+    <div class="container">
+      <div class="security-banner">
+        <div class="security-header text-center">
+          <span class="security-shield-icon">🛡️</span>
+          <h2>Vos données privées vous appartiennent</h2>
+          <p>La sécurité et la confidentialité de vos justificatifs financiers sont notre priorité absolue.</p>
+        </div>
+
+        <div class="security-grid">
+          <div class="security-item">
+            <div class="sec-icon">🔒</div>
+            <h4>Chiffrement de bout en bout</h4>
+            <p>Vos factures et contrats sont chiffrés avec les standards bancaires les plus stricts et stockés en sécurité.</p>
+          </div>
+
+          <div class="security-item">
+            <div class="sec-icon">🚫</div>
+            <h4>Zéro revente de données</h4>
+            <p>Vos informations financières ne sont ni analysées pour du ciblage, ni partagées, ni vendues à des tiers.</p>
+          </div>
+
+          <div class="security-item">
+            <div class="sec-icon">⚖️</div>
+            <h4>Conformité RGPD stricte</h4>
+            <p>Exportation ou suppression intégrale de votre compte et de vos données en un clic depuis vos réglages.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 6 : GRILLE TARIFAIRE (Transparence totale)           -->
+  <!-- ============================================================ -->
+  <section class="section-pricing" id="pricing">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">OFFRES CLAIRES</span>
+        <h2 class="section-title">Rentabilisé dès le premier mois</h2>
+        <p class="section-sub">Une formule gratuite pour commencer, et le plein pouvoir avec Garantik Premium.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <!-- Formule Découverte -->
+        <div class="pricing-card free-card">
+          <div class="plan-head">
+            <h3 class="plan-name">Formule Découverte</h3>
+            <p class="plan-target">Pour tester et sécuriser ses premiers achats</p>
+            <div class="price-box">
+              <span class="price-val">0 €</span>
+              <span class="price-period">pour toujours</span>
+            </div>
+          </div>
+
+          <ul class="plan-features">
+            <li><span class="check">✓</span> Jusqu'à 5 contrats ou garanties suivis</li>
+            <li><span class="check">✓</span> Alertes push basiques à J-2</li>
+            <li><span class="check">✓</span> Scan photo standard</li>
+            <li class="disabled"><span class="cross">✕</span> Lettres de résiliation PDF illimitées</li>
+            <li class="disabled"><span class="cross">✕</span> Alertes personnalisées multi-échéances</li>
+          </ul>
+
+          <a href="#download" class="btn btn-outline btn-block">
+            Commencer gratuitement
+          </a>
+        </div>
+
+        <!-- Garantik Premium -->
+        <div class="pricing-card premium-card">
+          <div class="popular-tag">RECOMMANDÉ • ÉCONOMISEZ 50%</div>
+          <div class="plan-head">
+            <h3 class="plan-name">Garantik Premium</h3>
+            <p class="plan-target">L'expérience complète sans aucune limite</p>
+            <div class="price-box">
+              <span class="price-val">2,49 €</span>
+              <span class="price-period">/ mois</span>
+            </div>
+            <span class="billing-detail">Soit 29,99 € facturés par an</span>
+          </div>
+
+          <ul class="plan-features">
+            <li><span class="check-accent">✓</span> <strong>Essai gratuit de 7 jours</strong> sans engagement</li>
+            <li><span class="check-accent">✓</span> <strong>Suivi illimité</strong> de contrats, garanties et factures</li>
+            <li><span class="check-accent">✓</span> <strong>Alertes personnalisables</strong> (J-30, J-7, J-2, Jour J)</li>
+            <li><span class="check-accent">✓</span> <strong>Générateur de lettres de résiliation PDF</strong> illimité</li>
+            <li><span class="check-accent">✓</span> Stockage sécurisé haute résolution</li>
+          </ul>
+
+          <a href="#download" class="btn btn-primary btn-block btn-pulse">
+            Essayer 7 jours gratuitement
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 7 : FAQ (Questions fréquentes)                       -->
+  <!-- ============================================================ -->
+  <section class="section-faq" id="faq">
+    <div class="container faq-container">
+      <div class="section-header text-center">
+        <span class="section-tag">FAQ</span>
+        <h2 class="section-title">Foire aux questions</h2>
+        <p class="section-sub">Tout ce que vous devez savoir sur le fonctionnement de Garantik.</p>
+      </div>
+
+      <div class="accordion-list">
+        <!-- Question 1 -->
+        <div class="accordion-item active">
+          <button class="accordion-header" aria-expanded="true">
+            <span>Comment fonctionne l'essai gratuit de 7 jours ?</span>
+            <span class="acc-chevron">▾</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Vous testez l'ensemble des fonctionnalités Premium gratuitement pendant une semaine complète. Si vous annulez avant la fin des 7 jours dans les réglages de votre compte Google Play, aucun centime n'est prélevé.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>Mes factures et données sont-elles stockées en sécurité ?</span>
+            <span class="acc-chevron">▾</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Oui. Vos documents sont hébergés sur des serveurs sécurisés et chiffrés. Seul votre compte authentifié peut y avoir accès. Nous appliquons les normes de sécurité bancaires les plus rigoureuses.
+            </p>
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header" aria-expanded="false">
+            <span>Puis-je résilier n'importe quel contrat avec l'application ?</span>
+            <span class="acc-chevron">▾</span>
+          </button>
+          <div class="accordion-body">
+            <p>
+              Garantik génère des lettres de résiliation juridiquement conformes au Code de la consommation et à la Loi Châtel / Hamon, valables pour la quasi-totalité des services (salle de sport, abonnements de streaming, assurances, forfaits téléphonie, box internet).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- SECTION 8 : FOOTER                                           -->
+  <!-- ============================================================ -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-shield small">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              <path d="M9 12l2 2 4-4"></path>
+            </svg>
+          </div>
+          <span class="brand-title">Garantik</span>
+        </div>
+        <p class="footer-tagline">Reprenez le contrôle total de vos finances et garanties.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#download">Conditions Générales d'Utilisation (CGU)</a>
+        <span>•</span>
+        <a href="#download">Politique de confidentialité</a>
+        <span>•</span>
+        <a href="#download">Mentions légales</a>
+        <span>•</span>
+        <a href="mailto:support@garantik.app">Contact support</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">© 2026 Garantik. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Accordion Script -->
+  <script src="script.js"></script>
+</body>
+</html>
