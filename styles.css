@@ -968,7 +968,179 @@ a {
 }
 
 /* ============================================================ */
-/* SECTION 8 : FOOTER                                           */
+/* SECTION 8 : RÈGLES DE CONFIDENTIALITÉ (PRIVACY POLICY)       */
+/* ============================================================ */
+.section-privacy {
+  padding: 90px 0;
+  background-color: #FFFFFF;
+  border-top: 1px solid var(--color-border);
+}
+
+.privacy-policy-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.privacy-summary-banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  background: var(--color-navy);
+  color: #FFFFFF;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.privacy-summary-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: var(--radius-md);
+}
+
+.p-badge-icon {
+  font-size: 1.8rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.privacy-summary-item strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+
+.privacy-summary-item p {
+  font-size: 0.86rem;
+  color: #94A3B8;
+  line-height: 1.5;
+}
+
+.privacy-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.privacy-article-card {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 32px 28px;
+  position: relative;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.privacy-article-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+.article-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 208, 132, 0.14);
+  color: #008753;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  margin-bottom: 14px;
+}
+
+.privacy-article-card h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 12px;
+}
+
+.privacy-article-card p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.privacy-article-card p:last-child {
+  margin-bottom: 0;
+}
+
+.privacy-bullet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.privacy-bullet-list li {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.55;
+  position: relative;
+  padding-left: 20px;
+}
+
+.privacy-bullet-list li::before {
+  content: '•';
+  position: absolute;
+  left: 4px;
+  top: 0;
+  color: var(--color-primary-shade);
+  font-weight: 800;
+}
+
+.privacy-bullet-list li strong {
+  color: var(--color-navy);
+}
+
+.privacy-inline-link {
+  color: #008753;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.privacy-inline-link:hover {
+  color: var(--color-navy);
+}
+
+.privacy-footer-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+  border: 1.5px solid #86EFAC;
+  border-radius: var(--radius-md);
+  padding: 28px 32px;
+}
+
+.privacy-cta-text h4 {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 4px;
+}
+
+.privacy-cta-text p {
+  font-size: 0.92rem;
+  color: #166534;
+}
+
+/* ============================================================ */
+/* SECTION 9 : FOOTER                                           */
 /* ============================================================ */
 .site-footer {
   background: var(--color-navy);
@@ -1040,11 +1212,15 @@ a {
   .social-proof {
     justify-content: center;
   }
-  .comparison-grid, .steps-grid, .security-grid {
+  .comparison-grid, .steps-grid, .security-grid, .privacy-summary-banner, .privacy-articles-grid {
     grid-template-columns: 1fr;
   }
   .pricing-grid {
     grid-template-columns: 1fr;
+  }
+  .privacy-footer-cta {
+    flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -1055,7 +1231,7 @@ a {
   .hero-title {
     font-size: 2.3rem;
   }
-  .security-banner {
-    padding: 40px 24px;
+  .security-banner, .privacy-summary-banner {
+    padding: 32px 20px;
   }
 }
